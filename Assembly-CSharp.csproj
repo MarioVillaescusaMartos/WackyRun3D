@@ -59,33 +59,33 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Follower\FollowerRotation.cs" />
-    <Compile Include="Assets\Scripts\Menu\PauseManager.cs" />
-    <Compile Include="Assets\Scripts\Menu\TryAgainMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
-    <Compile Include="Assets\Scripts\Road\RoadMove.cs" />
-    <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
-    <Compile Include="Assets\Scripts\GameOver\GameOverManager.cs" />
-    <Compile Include="Assets\Scripts\Runner\Engine.cs" />
-    <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\FXController.cs" />
-    <Compile Include="Assets\Scripts\DamageSystem\DontDestroyDamageSystem.cs" />
-    <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
-    <Compile Include="Assets\Scripts\DamageSystem\DestroyDamageSystem.cs" />
-    <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
-    <Compile Include="Assets\Scripts\Menu\SettingsMenu.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem\FollowerHealthSystem.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem\HeartManager.cs" />
-    <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadMenu.cs" />
-    <Compile Include="Assets\Scripts\GameOver\GameOverSystem.cs" />
-    <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\InputSystemKeyboard.cs" />
-    <Compile Include="Assets\Scripts\DamageSystem\DamageSystem.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerMovement.cs" />
+    <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\FXController.cs" />
+    <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
+    <Compile Include="Assets\Scripts\DamageSystem\DamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HeartManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\TryAgainMenu.cs" />
+    <Compile Include="Assets\Scripts\GameOver\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\FollowerHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Runner\Engine.cs" />
+    <Compile Include="Assets\Scripts\GameOver\GameOverSystem.cs" />
+    <Compile Include="Assets\Scripts\Road\RoadMove.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerRotation.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\DamageSystem\DontDestroyDamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerMovement.cs" />
+    <Compile Include="Assets\Scripts\DamageSystem\DestroyDamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
+    <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
+    <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

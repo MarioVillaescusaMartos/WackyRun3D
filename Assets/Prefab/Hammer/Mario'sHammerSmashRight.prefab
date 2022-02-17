@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7838596031017448469}
   - component: {fileID: -5307624659101198141}
   - component: {fileID: 8848643175676892575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mario'sHammerSmashRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

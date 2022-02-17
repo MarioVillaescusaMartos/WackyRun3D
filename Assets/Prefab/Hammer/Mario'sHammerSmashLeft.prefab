@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 2418549013295065547}
   - component: {fileID: -86181870181257620}
   - component: {fileID: 1385807693915562200}
-  m_Layer: 0
+  - component: {fileID: 4697994365236008947}
+  m_Layer: 8
   m_Name: Mario'sHammerSmashLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,3 +166,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: {fileID: 11400000, guid: 17c73ae5891f23044980e3dc740fbdef, type: 2}
   remainState: {fileID: 0}
+--- !u!114 &4697994365236008947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6600724303186479319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c711b6b905db6104db3c14e44543eac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restHealth: 1

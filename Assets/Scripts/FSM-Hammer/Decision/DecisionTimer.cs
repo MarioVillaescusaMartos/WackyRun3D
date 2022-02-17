@@ -12,8 +12,6 @@ public class DecisionTimer : MonoBehaviour
     private bool waitingToStart;
     private bool waitingToEnd;
 
-    public bool waitKey;
-
     private float initialEnd;
     private float initialStart;
 
@@ -57,9 +55,6 @@ public class DecisionTimer : MonoBehaviour
                 waitTimeEnd -= Time.deltaTime;                
             }
         }
-
-        Debug.Log(waitingToEnd);
-
     }
 
     public bool ReturnTime()

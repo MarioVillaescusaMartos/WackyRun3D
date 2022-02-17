@@ -51,7 +51,6 @@ public class InputSystemKeyboard : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.RightControl))
             {
                 OnInvencible();
-
             }
 
         //Delete followers

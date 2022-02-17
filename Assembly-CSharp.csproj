@@ -86,6 +86,19 @@
     <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
+    <Compile Include="Assets\Scripts\FSM-Follower\Actions\IdleEnemy.cs" />
+    <Compile Include="Assets\Scripts\FSM\Decision.cs" />
+    <Compile Include="Assets\Scripts\FSM-Runner\Actions\Idle.cs" />
+    <Compile Include="Assets\Scripts\FSM-Follower\Actions\ShotEnemy.cs" />
+    <Compile Include="Assets\Scripts\FSM\Transition.cs" />
+    <Compile Include="Assets\Scripts\FSM-Runner\Actions\Run.cs" />
+    <Compile Include="Assets\Scripts\FSM\State.cs" />
+    <Compile Include="Assets\Scripts\FSM-Runner\Actions\Jump.cs" />
+    <Compile Include="Assets\Scripts\FSM\Action.cs" />
+    <Compile Include="Assets\Scripts\FSM\Controller.cs" />
+    <Compile Include="Assets\Scripts\FSM-Hammer\Action\IdleHammer.cs" />
+    <Compile Include="Assets\Scripts\FSM-Hammer\Action\SmashHammer.cs" />
+    <Compile Include="Assets\Scripts\FSM-Hammer\Decision\TimeDecision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />

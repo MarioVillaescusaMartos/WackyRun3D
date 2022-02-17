@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FSM;
 
-public class TimeDecision : MonoBehaviour
+[CreateAssetMenu(menuName = "FSM/Hammer/Decison/Time")]
+public class TimeDecision : FSM.Decision
 {
-    // Start is called before the first frame update
-    void Start()
+    public override bool Decide(Controller controller)
     {
-        
-    }
+        bool h = controller.GetCurrentTime();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return h;
     }
 }

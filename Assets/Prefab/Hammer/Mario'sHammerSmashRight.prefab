@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3270648018422522595}
   - component: {fileID: 4046775619027645343}
   - component: {fileID: 7838596031017448469}
+  - component: {fileID: -5307624659101198141}
+  - component: {fileID: 8848643175676892575}
   m_Layer: 0
   m_Name: Mario'sHammerSmashRight
   m_TagString: Untagged
@@ -135,3 +137,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-5307624659101198141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585025251128409561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46148a16bd9254b4a9d8c14b631bb2a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTimeStart: 2
+  waitTimeEnd: 2
+--- !u!114 &8848643175676892575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585025251128409561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1510b4cb4781fd42bd8088456343aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: 17c73ae5891f23044980e3dc740fbdef, type: 2}
+  remainState: {fileID: 0}

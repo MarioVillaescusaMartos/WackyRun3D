@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672eb34546c88b943adaa36b82ddc425, type: 3}
   m_Name: SmashState
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
+  actions:
+  - {fileID: 11400000, guid: 4b8b47b9c65900d4b8126af8becdee43, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 24e75bc6775f56d4d89ceff519f7edf7, type: 2}
+    trueState: {fileID: 11400000}
+    falseState: {fileID: 11400000, guid: 17c73ae5891f23044980e3dc740fbdef, type: 2}

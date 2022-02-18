@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FSM;
 
+
 [CreateAssetMenu(menuName = "FSM/Hammer/Actions/Smash")]
 public class SmashHammer : FSM.Action
 {

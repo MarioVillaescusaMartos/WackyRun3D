@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FSM;
 
+
 [CreateAssetMenu(menuName = "FSM/Hammer/Actions/Idle")]
 public class IdleHammer : FSM.Action
 {

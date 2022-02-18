@@ -10,16 +10,15 @@ namespace FSM
         public State currentState;  //Apuntadosr al estado actual
         public State remainState;
 
+        private Animator _animatorController;
+        private DecisionTimer _decisionT;
 
         public bool ActiveAI { get; set; }
 
         void Start()
         {
             ActiveAI = true;  //Para activar AI
-        }
-
-        private Animator _animatorController;
-        private DecisionTimer _decisionT;
+        }        
 
         private void Awake()
         {

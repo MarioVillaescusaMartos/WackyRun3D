@@ -21,6 +21,7 @@ public class DecisionTimer : MonoBehaviour
         initialStart = waitTimeStart;
         initialEnd = waitTimeEnd;
 
+
         waitingToStart = true;
         waitingToEnd = false;
     }

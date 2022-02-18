@@ -99,6 +99,9 @@
     <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\BEDRILL\Track_Environment_Free\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity 2021.1.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

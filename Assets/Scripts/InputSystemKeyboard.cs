@@ -48,7 +48,7 @@ public class InputSystemKeyboard : MonoBehaviour
             }
 
             //Invencible
-            if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.RightControl))
+            if (/*Input.GetKeyDown(KeyCode.I) &&*/ Input.GetKeyDown(KeyCode.RightControl))
             {
                 OnInvencible();
             }

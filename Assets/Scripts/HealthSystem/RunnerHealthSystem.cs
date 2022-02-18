@@ -10,8 +10,27 @@ public class RunnerHealthSystem : HealthSystem
 
     public bool INVENCIBLE;
 
+    InputSystemKeyboard _inputSystem;
+
     void Start()
     {
+    }
+
+    private void Awake()
+    {
+        _inputSystem = GetComponent<InputSystemKeyboard>();
+        INVENCIBLE = false;
+    }
+
+    private void OnEnable()
+    {
+        _inputSystem.OnInvencible += SetInvencible;
+    }
+
+    private void OnDisable()
+    {
+        _inputSystem.OnInvencible -= SetInvencible;
+
     }
 
     public override void RestHealth(int restHealthValue)
@@ -26,6 +45,19 @@ public class RunnerHealthSystem : HealthSystem
         {
             OnHealthZero();
         }
+    }
+
+    public void SetInvencible()
+    {
+        if (INVENCIBLE)
+        {
+            INVENCIBLE = false;
+        }
+        else
+        {
+            INVENCIBLE = true;
+        }
+        Debug.Log("Hola: " + INVENCIBLE);
     }
 
     public int ReturnHealth()

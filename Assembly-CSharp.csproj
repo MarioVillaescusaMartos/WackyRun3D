@@ -95,6 +95,8 @@
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
+    <Compile Include="Assets\Scripts\DieSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

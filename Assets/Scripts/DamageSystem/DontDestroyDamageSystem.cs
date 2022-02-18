@@ -11,7 +11,7 @@ public class DontDestroyDamageSystem : DamageSystem
     }
 
     // Update is called once per frame
-    public override void OnTriggerEnter2D(Collider2D collision)
+    public override void OnTriggerEnter(Collider collision)
     {
         if (collision.TryGetComponent(out HealthSystem damageHealth))
         {

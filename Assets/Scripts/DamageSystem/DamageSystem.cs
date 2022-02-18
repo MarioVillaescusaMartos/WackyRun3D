@@ -6,5 +6,5 @@ public abstract class DamageSystem : MonoBehaviour
 {
     public int restHealth;
 
-    public abstract void OnTriggerEnter2D(Collider2D collision);
+    public abstract void OnTriggerEnter(Collider collision);
 }

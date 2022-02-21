@@ -5,14 +5,14 @@ using UnityEngine;
 public class FollowerMovement : MonoBehaviour
 {
     [SerializeField]
-    private Transform target;
-    [SerializeField]
     private float speed;
+    [SerializeField]
+    private float followDistance;
 
+    private Transform target;
     private bool startMove;
 
     Rigidbody _rb;
-    RoadMove _rm;
 
 
     // Start is called before the first frame update
@@ -28,15 +28,17 @@ public class FollowerMovement : MonoBehaviour
         if (startMove)
         {
             Destroy(gameObject.GetComponent<RoadMove>());
-            transform.SetParent(null);
-            Vector3 pos = Vector3.MoveTowards(transform.position, target.position - new Vector3(0, 0, 5), speed * Time.fixedDeltaTime);
+            Vector3 pos = Vector3.MoveTowards(transform.position, target.position - new Vector3(0, 0, followDistance), speed * Time.fixedDeltaTime);
             _rb.MovePosition(pos);
+            transform.LookAt(target);
         }
         
     }
 
-    public void OnTriggerEnter(Collider collision)
+   public void GetTarget(Transform targ)
     {
+        target = targ;
+
         startMove = true;
     }
 }

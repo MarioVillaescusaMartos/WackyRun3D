@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RoadMove : MonoBehaviour
 {
-    public float speed = 100.0f;
-    public float segmentLength = 1000.0f;
+    public float speed;
+    public float segmentLength;
 
     Vector3 basePosition;
 

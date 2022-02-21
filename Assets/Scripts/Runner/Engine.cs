@@ -33,7 +33,7 @@ public class Engine : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    /*private void OnEnable()
+    private void OnEnable()
     {
         _inputSystem.OnJump += Jumping; 
     }
@@ -41,7 +41,7 @@ public class Engine : MonoBehaviour
     private void OnDisable()
     {
         _inputSystem.OnJump -= Jumping;
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
@@ -66,7 +66,7 @@ public class Engine : MonoBehaviour
 
     private void Jumping()
     {
-        transform.localScale += new Vector3(sizeX, sizeY, sizeZ);
+        transform.localScale += new Vector3(sizeX*Time.deltaTime, sizeY* Time.deltaTime, sizeZ* Time.deltaTime);
     }
 
 }

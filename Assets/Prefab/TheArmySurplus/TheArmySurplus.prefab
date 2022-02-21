@@ -589,6 +589,9 @@ GameObject:
   - component: {fileID: 247008678444121836}
   - component: {fileID: 8340026191997953290}
   - component: {fileID: 5665071106406866355}
+  - component: {fileID: 91852376767030661}
+  - component: {fileID: 449176132725179531}
+  - component: {fileID: 131307939032044357}
   m_Layer: 7
   m_Name: TheArmySurplus
   m_TagString: Untagged
@@ -633,7 +636,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!65 &1648428337821113201
 BoxCollider:
@@ -646,8 +649,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03631734, y: 0.06706802, z: 0.09064574}
-  m_Center: {x: 0.000137021, y: 0.035163276, z: 0.012695228}
+  m_Size: {x: 0.03631734, y: 0.069350764, z: 0.08865779}
+  m_Center: {x: 0.000137021, y: 0.034021903, z: 0.013689201}
 --- !u!65 &8685795617002832374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -659,8 +662,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.04069594, y: 0.0727443, z: 0.093531586}
-  m_Center: {x: 0.0008273968, y: 0.034384467, z: 0.012706298}
+  m_Size: {x: 0.04069594, y: 0.0668438, z: 0.09249656}
+  m_Center: {x: 0.0008273968, y: 0.037334718, z: 0.013223828}
 --- !u!95 &247008678444121836
 Animator:
   serializedVersion: 3
@@ -708,6 +711,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   maxHealth: 1
+--- !u!114 &91852376767030661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646044510277692988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0ed0f2a8b181a4fa2dfe11d6685288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  followDistance: 11
+--- !u!114 &449176132725179531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646044510277692988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aed48f81f93e044b9297a64bdcdb795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeRest: 10
+  rotateSpeed: 2
+--- !u!114 &131307939032044357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646044510277692988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015062dbb58a9da4cb3745d77000eb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8811176409474721325
 GameObject:
   m_ObjectHideFlags: 0

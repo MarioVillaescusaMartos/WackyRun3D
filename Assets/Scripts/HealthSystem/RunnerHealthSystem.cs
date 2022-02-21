@@ -12,14 +12,14 @@ public class RunnerHealthSystem : HealthSystem
 
     InputSystemKeyboard _inputSystem;
 
-    void Start()
-    {
-    }
+    
 
     private void Awake()
     {
         _inputSystem = GetComponent<InputSystemKeyboard>();
         INVENCIBLE = false;
+
+        SendHealth();
     }
 
     private void OnEnable()
@@ -33,17 +33,23 @@ public class RunnerHealthSystem : HealthSystem
 
     }
 
+    void Start()
+    {
+    }
+
     public override void RestHealth(int restHealthValue)
     {
         if (!INVENCIBLE)
         {
             health -= restHealthValue;
             OnHealthDecrease();
+            SendHealth();
         }
 
         if (health <= 0)
         {
             OnHealthZero();
+            SendHealth();
         }
     }
 
@@ -57,11 +63,15 @@ public class RunnerHealthSystem : HealthSystem
         {
             INVENCIBLE = true;
         }
-        Debug.Log("Hola: " + INVENCIBLE);
     }
 
     public int ReturnHealth()
     {
         return health;
+    }
+
+    public void SendHealth()
+    {
+        HeartManager.heart = health;
     }
 }

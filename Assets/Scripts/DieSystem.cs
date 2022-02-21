@@ -5,20 +5,46 @@ using System;
 
 public class DieSystem : MonoBehaviour
 {
-    private bool explode;
+    [SerializeField]
+    private float sizeRest;
+    [SerializeField]
+    private float rotateSpeed;
+
+    private bool die;
+
+    private void Awake()
+    {
+        die = false;
+    }
 
     private void OnEnable()
     {
-        GetComponent<RunnerHealthSystem>().OnHealthZero += Die;
+        GetComponent<FollowerHealthSystem>().OnHealthZero += Die;
     }
 
     private void OnDisable()
     {
-        GetComponent<RunnerHealthSystem>().OnHealthZero -= Die;
+        GetComponent<FollowerHealthSystem>().OnHealthZero -= Die;
+    }
+
+    public void Update()
+    {
+        if (transform.localScale.x >= 1 && die)
+        {
+            transform.localScale -= new Vector3(sizeRest * Time.deltaTime, sizeRest * Time.deltaTime, sizeRest * Time.deltaTime);
+
+            transform.Rotate(new Vector3(0, rotateSpeed, 0), Space.World);
+        }
+
+        if (transform.localScale.x <= 1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Die()
     {
-        Destroy(gameObject);
+        die = true;
+        Destroy(gameObject.GetComponent<FollowerMovement>());
     }
 }

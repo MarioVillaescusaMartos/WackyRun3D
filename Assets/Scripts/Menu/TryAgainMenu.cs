@@ -8,9 +8,6 @@ public class TryAgainMenu : MonoBehaviour
     [SerializeField]
     private GameObject gameOversUI;
 
-    [SerializeField]
-    private Toggle toggleUI;
-
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +27,5 @@ public class TryAgainMenu : MonoBehaviour
         gameOversUI.SetActive(false);
 
         Time.timeScale = 1f;
-
-        GameOverManager.notShowGameOver = toggleUI.isOn;
     }
 }

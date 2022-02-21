@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class InputSystemKeyboard : MonoBehaviour
 { 
@@ -40,21 +41,39 @@ public class InputSystemKeyboard : MonoBehaviour
                 OnPause(); //Cuando se pulsa la tecla "Esc" el juego se pausa
             }
 
-            //Good mode keys
-            //Create Follower
-            if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.RightControl))
-            {
-                OnCreateFollower();
-            }
-
+            //Good mode keys          
             //Invencible
-            if (/*Input.GetKeyDown(KeyCode.I) &&*/ Input.GetKeyDown(KeyCode.RightControl))
+            if (Input.GetKeyDown(KeyCode.Alpha0))
             {
                 OnInvencible();
             }
 
-        //Delete followers
-            if (Input.GetKeyDown(KeyCode.O) && Input.GetKeyDown(KeyCode.RightControl))
+            //Load level 1
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                SceneManager.LoadScene("Level1Scene");
+            }
+
+            //Load level 2
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SceneManager.LoadScene("Level2Scene");
+            }
+
+            //Load level 3
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SceneManager.LoadScene("Level3Scene");
+            }
+
+            //Create Follower
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                OnCreateFollower();
+            }
+
+            //Delete followers
+            if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 OnDeleteFollower();
 

@@ -9,7 +9,9 @@ public class Engine : MonoBehaviour
     private float speed;
 
     [SerializeField]
-    private float jumpSpeed;
+    private float maxFront;
+    [SerializeField]
+    private float maxBack;    
 
     [SerializeField]
     private float sizeX;
@@ -17,6 +19,9 @@ public class Engine : MonoBehaviour
     private float sizeY;
     [SerializeField]
     private float sizeZ;
+
+    private float posCounterFront = 0;
+    private float posCounterBack = 0;
 
     private InputSystemKeyboard _inputSystem;
     private Rigidbody _rb;
@@ -41,7 +46,22 @@ public class Engine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _rb.velocity = new Vector3(_inputSystem.hor * speed, _rb.velocity.y, 1);
+        _rb.velocity = new Vector3(_inputSystem.hor * speed, _rb.velocity.y, 0);
+
+        if (posCounterFront <= maxFront && _inputSystem.ver > 0)
+        {
+            _rb.velocity = new Vector3(0, _rb.velocity.y, _inputSystem.ver * speed);
+
+            posCounterFront += Time.deltaTime;
+            posCounterBack -= Time.deltaTime;
+        }
+        else if (posCounterBack <= maxBack && _inputSystem.ver < 0)
+        {
+            _rb.velocity = new Vector3(0, _rb.velocity.y, _inputSystem.ver * speed);
+
+            posCounterFront -= Time.deltaTime;
+            posCounterBack += Time.deltaTime;
+        }
     }
 
     private void Jumping()

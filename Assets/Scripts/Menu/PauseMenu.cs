@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour
     {
         gamePauseUI.SetActive(false);
         gameIsPaused = false;
+        Time.timeScale = 1f;
         //GameManager.activeTimeScale = gameIsPaused;
     }
 
@@ -63,6 +64,7 @@ public class PauseMenu : MonoBehaviour
     {
         gamePauseUI.SetActive(true);
         gameIsPaused = true;
+        Time.timeScale = 0f;
         //GameManager.activeTimeScale = gameIsPaused;
     }
 }

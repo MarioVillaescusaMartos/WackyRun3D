@@ -6,15 +6,11 @@ using UnityEngine.UI;
 
 public class LoadGame : MonoBehaviour
 {
-    [SerializeField]
-    private Text infoDisplay;
-
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
     public void LoadLevel1()
     {
         SceneManager.LoadScene("Level1Scene");

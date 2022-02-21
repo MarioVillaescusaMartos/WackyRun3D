@@ -22,14 +22,14 @@ public class InputSystemKeyboard : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-       /* pause = PauseManager.pauseMode;
+        pause = PauseManager.pauseMode;
 
         if (!pause)
-        {*/
+        {
             hor = Input.GetAxis("Horizontal");
             ver = Input.GetAxis("Vertical");
-            //w = Input.GetKeyDown(KeyCode.W);
 
+            //w = Input.GetKeyDown(KeyCode.W);
             if (Input.GetKeyDown(KeyCode.W))
             {
                 OnJump(); //Cuando se pulsa la tecla "W" el personaje principal salta, y si se le pulsa una segunda vez salta otra vez en el aire
@@ -59,7 +59,7 @@ public class InputSystemKeyboard : MonoBehaviour
                 OnDeleteFollower();
 
             }
-        //}
+        }
     }
 
     public bool ReturnKey()

@@ -1320,6 +1320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   jumpSpeed: 0
+  maxFront: 1
+  maxBack: 1
+  posCounterFront: 0
+  posCounterBack: 0
   sizeX: 15
   sizeY: 15
   sizeZ: 15

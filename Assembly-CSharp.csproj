@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\FSM\Controller.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Action\IdleHammer.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
-    <Compile Include="Assets\Scripts\Menu\FXController.cs" />
+    <Compile Include="Assets\Scripts\Sounds\FXController.cs" />
     <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\HealthSystem\FollowerHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Runner\Engine.cs" />
     <Compile Include="Assets\Scripts\InputSystemKeyboard.cs" />
+    <Compile Include="Assets\Scripts\DieSystem.cs" />
     <Compile Include="Assets\Scripts\GameOver\GameOverSystem.cs" />
     <Compile Include="Assets\Scripts\Road\RoadMove.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Action\SmashHammer.cs" />
@@ -93,13 +94,36 @@
     <Compile Include="Assets\Scripts\DamageSystem\DestroyDamageSystem.cs" />
     <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
-    <Compile Include="Assets\Scripts\DieSystem.cs" />
-    <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
+    <Compile Include="Assets\Scripts\Sounds\MusicController.cs" />
+    <Compile Include="Assets\Scripts\Sounds\PlayerSounds.cs" />
+    <Compile Include="Assets\Scripts\Sounds\EnemySounds.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\BEDRILL\Track_Environment_Free\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

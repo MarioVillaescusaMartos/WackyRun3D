@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6368470872921309998}
   - component: {fileID: 6368470872921309999}
   - component: {fileID: 6368470872921309996}
+  - component: {fileID: 7228701725202169545}
   m_Layer: 8
   m_Name: Mario'sHammerSmashLeft
   m_TagString: Untagged
@@ -105,7 +106,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 38
   m_CollisionDetection: 0
 --- !u!65 &-178907739686757197
 BoxCollider:
@@ -193,3 +194,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restHealth: 1
+--- !u!114 &7228701725202169545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368470872921309997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b03ada96b7633440b9db413bf50172d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  segmentLength: 1000

@@ -8,6 +8,8 @@ public class FoxMove : MonoBehaviour
     private float speed;
     [SerializeField]
     private int direction;
+    [SerializeField]
+    private float zSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,7 @@ public class FoxMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + speed * Time.deltaTime * Vector3.right * direction;
+        //transform.position = transform.position + speed * Time.deltaTime * Vector3.right * direction;
+        transform.position = transform.position.x * speed * Time.deltaTime * Vector3.right * direction;
     }
 }

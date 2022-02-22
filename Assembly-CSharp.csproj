@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\FSM\State.cs" />
     <Compile Include="Assets\Scripts\FSM\Controller.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Action\IdleHammer.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HeartCanvas.cs" />
+    <Compile Include="Assets\Scripts\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Sounds\FXController.cs" />
     <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
@@ -73,9 +75,11 @@
     <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
     <Compile Include="Assets\Scripts\Sounds\EnemySounds.cs" />
     <Compile Include="Assets\Scripts\FSM\Decision.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerSystem.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DamageSystem.cs" />
     <Compile Include="Assets\Scripts\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Decision\DecisionTimer.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerCanvas.cs" />
     <Compile Include="Assets\Scripts\FSM\Transition.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HeartManager.cs" />
     <Compile Include="Assets\Scripts\Menu\TryAgainMenu.cs" />
@@ -91,21 +95,21 @@
     <Compile Include="Assets\Scripts\Follower\FollowerRotation.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DontDestroyDamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Runner\SendTarget.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Fox\FoxMove.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerMovement.cs" />
     <Compile Include="Assets\Scripts\Sounds\MusicController.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DestroyDamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerManager.cs" />
     <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
-    <Compile Include="Assets\Scripts\HealthSystem\HeartCanvas.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\Fox\FoxMove.cs" />
-    <Compile Include="Assets\Scripts\Runner\SendTarget.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerCanvas.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerManager.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerSystem.cs" />
+    <Compile Include="Assets\Scripts\GrassGenerator.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\ObstaclesGenerator.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Fox\FoxGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -7,6 +7,9 @@ public class GrassGenerator : MonoBehaviour
     [SerializeField]
     private Transform[] positions;
 
+    [SerializeField]
+    private float waitTime;
+
     void Start()
     {
         StartCoroutine(GenerateGrass());
@@ -26,19 +29,21 @@ public class GrassGenerator : MonoBehaviour
             {
                 GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass1List");
                 grassLeft.transform.position = positions[0].position;
-                grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                grassLeft.transform.rotation = positions[0].rotation;
                 grassLeft.SetActive(true);
 
                 if (model2 == 0)
                 {
                     GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass1List");
                     grassRight.transform.position = positions[1].position;
+                    grassRight.transform.rotation = positions[1].rotation;
                     grassRight.SetActive(true);
                 }
                 else
                 {
                     GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass2List");
                     grassRight.transform.position = positions[1].position;
+                    grassRight.transform.rotation = positions[1].rotation;
                     grassRight.SetActive(true);
                 }
             }
@@ -46,20 +51,21 @@ public class GrassGenerator : MonoBehaviour
             {
                 GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass1List");
                 grassRight.transform.position = positions[1].position;
+                grassRight.transform.rotation = positions[1].rotation;
                 grassRight.SetActive(true);
 
                 if (model2 == 0)
                 {
                     GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass1List");
                     grassLeft.transform.position = positions[0].position;
-                    grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                    grassLeft.transform.rotation = positions[0].rotation;
                     grassLeft.SetActive(true);
                 }
                 else
                 {
                     GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass2List");
                     grassLeft.transform.position = positions[0].position;
-                    grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                    grassLeft.transform.rotation = positions[0].rotation;
                     grassLeft.SetActive(true);
                 }
             }
@@ -70,19 +76,21 @@ public class GrassGenerator : MonoBehaviour
             {
                 GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass2List");
                 grassLeft.transform.position = positions[0].position;
-                grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                grassLeft.transform.rotation = positions[0].rotation;
                 grassLeft.SetActive(true);
 
                 if (model2 == 0)
                 {
                     GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass1List");
                     grassRight.transform.position = positions[1].position;
+                    grassRight.transform.rotation = positions[1].rotation;
                     grassRight.SetActive(true);
                 }
                 else
                 {
                     GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass2List");
                     grassRight.transform.position = positions[1].position;
+                    grassRight.transform.rotation = positions[1].rotation;
                     grassRight.SetActive(true);
                 }
             }
@@ -90,27 +98,27 @@ public class GrassGenerator : MonoBehaviour
             {
                 GameObject grassRight = PoolingManager.Instance.GetPooledObject("Grass2List");
                 grassRight.transform.position = positions[1].position;
+                grassRight.transform.rotation = positions[1].rotation;
                 grassRight.SetActive(true);
 
                 if (model2 == 0)
                 {
                     GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass1List");
                     grassLeft.transform.position = positions[0].position;
-                    grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                    grassLeft.transform.rotation = positions[0].rotation;
                     grassLeft.SetActive(true);
                 }
                 else
                 {
                     GameObject grassLeft = PoolingManager.Instance.GetPooledObject("Grass2List");
                     grassLeft.transform.position = positions[0].position;
-                    grassLeft.transform.Rotate(new Vector3(0, 180, 0));//positions[0].rotation;
+                    grassLeft.transform.rotation = positions[0].rotation;
                     grassLeft.SetActive(true);
                 }
             } 
         }       
 
-        //Instantiate(meteor[t], positions[a].position, Quaternion.identity);
-        yield return new WaitForSeconds(11.0f);
+        yield return new WaitForSeconds(waitTime);
         StartCoroutine(GenerateGrass());
     }
 }

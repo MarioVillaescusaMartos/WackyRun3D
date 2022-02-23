@@ -5,29 +5,23 @@ using UnityEngine;
 public class StageMove : MonoBehaviour
 {
     public float speed;
-    public float segmentLength;
 
-    Vector3 basePosition;
+    private Rigidbody _rb;
 
-    float offset;
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody>();
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        basePosition = transform.position;
-        offset = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        offset -= speed * Time.deltaTime;
-
-        transform.position = basePosition + offset * Vector3.forward;
-    }
-
-    public void ResetPos()
-    {
-
+        _rb.velocity = new Vector3(0, 0, -1 * speed);
     }
 }

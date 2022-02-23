@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menu\LoadMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\ObstaclesGenerator.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseManager.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Decision\TimeDecision.cs" />
     <Compile Include="Assets\Scripts\FSM\State.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Sounds\FXController.cs" />
     <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
+    <Compile Include="Assets\Scripts\GrassGenerator.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
     <Compile Include="Assets\Scripts\Sounds\EnemySounds.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Assets\Scripts\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Decision\DecisionTimer.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerCanvas.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Fox\FoxGenerator.cs" />
     <Compile Include="Assets\Scripts\FSM\Transition.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HeartManager.cs" />
     <Compile Include="Assets\Scripts\Menu\TryAgainMenu.cs" />
@@ -90,11 +93,13 @@
     <Compile Include="Assets\Scripts\DieSystem.cs" />
     <Compile Include="Assets\Scripts\Sounds\PlayerSounds.cs" />
     <Compile Include="Assets\Scripts\GameOver\GameOverSystem.cs" />
+    <Compile Include="Assets\Scripts\Road\StageMove.cs" />
     <Compile Include="Assets\Scripts\Road\RoadMove.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Action\SmashHammer.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerRotation.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DontDestroyDamageSystem.cs" />
+    <Compile Include="Assets\Scripts\OutOfBoundDestruction.cs" />
     <Compile Include="Assets\Scripts\Runner\SendTarget.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Fox\FoxMove.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
@@ -105,11 +110,9 @@
     <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
+    <Compile Include="Assets\Scripts\OutOfBoundsDetection.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
-    <Compile Include="Assets\Scripts\GrassGenerator.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\ObstaclesGenerator.cs" />
-    <Compile Include="Assets\Scripts\Obstacles\Fox\FoxGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

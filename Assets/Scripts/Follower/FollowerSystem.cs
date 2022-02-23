@@ -1,46 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class FollowerSystem : MonoBehaviour
 {
     private int numFollowers;
 
+    [SerializeField]
+    private int followerIncrement;
+
+    private FollowerHealthSystem _follHealth;
+    private FollowerMovement _follMov;
+
     private void Awake()
     {
-        
+        _follHealth = GetComponent<FollowerHealthSystem>();
+        _follMov = GetComponent<FollowerMovement>();
     }
 
     private void OnEnable()
     {
-        
+        _follHealth.OnHealthZero += FollowerDecrease;
+        _follMov.OnStartFollow += FollowerIncrease;
     }
 
     private void OnDisable()
     {
-        
+        _follHealth.OnHealthZero -= FollowerDecrease;
+        _follMov.OnStartFollow -= FollowerIncrease;
     }
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
-
-    private void Update()
     {
         numFollowers = FollowerManager.followers;
     }
 
     public void FollowerIncrease()
     {
-        numFollowers += 1;
+        numFollowers = FollowerManager.followers + followerIncrement;
+
         FollowerManager.followers = numFollowers;
     }
 
     public void FollowerDecrease()
     {
-        numFollowers -= 1;
+        numFollowers = FollowerManager.followers - followerIncrement;
+
         FollowerManager.followers = numFollowers;
     }
 }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegBack2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegBack1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegFront1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegBack2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegBack1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5572779666037973614}
   - component: {fileID: 5572779666032407370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegFront2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegFront1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,9 +387,10 @@ GameObject:
   - component: {fileID: 5572779666028121482}
   - component: {fileID: 4812619222392580903}
   - component: {fileID: 4690592091920348971}
-  - component: {fileID: 4189717466220219248}
-  - component: {fileID: -704790824768252147}
-  m_Layer: 0
+  - component: {fileID: -8084802298156985369}
+  - component: {fileID: -2151400026901101424}
+  - component: {fileID: -3208478067678969632}
+  m_Layer: 8
   m_Name: Spider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +461,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.259679, y: 0.81776214, z: 0.8178545}
   m_Center: {x: -0.011267663, y: 0.45354077, z: 0.091074914}
---- !u!114 &4189717466220219248
+--- !u!114 &-8084802298156985369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,11 +470,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5572779666037620316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bcd70fd673f0144a988b43315be12ee, type: 3}
+  m_Script: {fileID: 11500000, guid: c711b6b905db6104db3c14e44543eac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   restHealth: 1
---- !u!114 &-704790824768252147
+--- !u!114 &-2151400026901101424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -482,11 +483,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5572779666037620316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b03ada96b7633440b9db413bf50172d, type: 3}
+  m_Script: {fileID: 11500000, guid: 79065e53c6c0be54c856698545cd1e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  segmentLength: 1000
+--- !u!114 &-3208478067678969632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5572779666037620316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b6919afc6aa34b81894cb9afedd83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5572779666037620318
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572779666037973630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegFront2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}

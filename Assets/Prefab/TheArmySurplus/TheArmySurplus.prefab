@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 91852376767030661}
   - component: {fileID: 449176132725179531}
   - component: {fileID: 131307939032044357}
+  - component: {fileID: 1236952051484759353}
   m_Layer: 7
   m_Name: TheArmySurplus
   m_TagString: Untagged
@@ -695,7 +696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b03ada96b7633440b9db413bf50172d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   segmentLength: 1000
 --- !u!114 &5665071106406866355
 MonoBehaviour:
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aed48f81f93e044b9297a64bdcdb795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeRest: 10
+  sizeRest: 15
   rotateSpeed: 2
 --- !u!114 &131307939032044357
 MonoBehaviour:
@@ -749,6 +749,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 015062dbb58a9da4cb3745d77000eb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followerIncrement: 1
+--- !u!114 &1236952051484759353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646044510277692988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b6919afc6aa34b81894cb9afedd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8811176409474721325

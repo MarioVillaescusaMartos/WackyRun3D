@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StageMove : MonoBehaviour
 {
-    public float speed;
+    private float speed;
 
     private Rigidbody _rb;
 
@@ -22,6 +22,8 @@ public class StageMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed = SpeedManager.speed;
+
         _rb.velocity = new Vector3(0, 0, -1 * speed);
     }
 }

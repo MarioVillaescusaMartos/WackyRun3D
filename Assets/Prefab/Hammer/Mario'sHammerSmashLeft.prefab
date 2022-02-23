@@ -17,8 +17,9 @@ GameObject:
   - component: {fileID: 6368470872921309993}
   - component: {fileID: 6368470872921309998}
   - component: {fileID: 6368470872921309999}
+  - component: {fileID: -1856421607132684855}
   - component: {fileID: 6368470872921309996}
-  - component: {fileID: 7228701725202169545}
+  - component: {fileID: 849196722286065744}
   m_Layer: 8
   m_Name: Mario'sHammerSmashLeft
   m_TagString: Untagged
@@ -181,6 +182,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: {fileID: 11400000, guid: 17c73ae5891f23044980e3dc740fbdef, type: 2}
   remainState: {fileID: 0}
+--- !u!114 &-1856421607132684855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368470872921309997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79065e53c6c0be54c856698545cd1e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6368470872921309996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restHealth: 1
---- !u!114 &7228701725202169545
+--- !u!114 &849196722286065744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,8 +216,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6368470872921309997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b03ada96b7633440b9db413bf50172d, type: 3}
+  m_Script: {fileID: 11500000, guid: df3b6919afc6aa34b81894cb9afedd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  segmentLength: 1000

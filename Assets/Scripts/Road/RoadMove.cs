@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoadMove : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     public float segmentLength;
 
     Vector3 basePosition;
@@ -21,6 +21,8 @@ public class RoadMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed = SpeedManager.speed;
+
         offset -= speed * Time.deltaTime;
 
         if(offset < -segmentLength)

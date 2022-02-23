@@ -373,6 +373,7 @@
 "Assets/Scripts/Sounds/FXController.cs"
 "Assets/Scripts/Sounds/MusicController.cs"
 "Assets/Scripts/Sounds/PlayerSounds.cs"
+"Assets/SpeedManager.cs"
 -langversion:8.0
 
 /deterministic

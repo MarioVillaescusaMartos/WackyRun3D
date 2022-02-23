@@ -7,13 +7,24 @@ public class FollowerHealthSystem : HealthSystem
 {
     public event Action OnHealthZero = delegate { };
 
+    private bool touched;
+
+    private void Start()
+    {
+        touched = false;
+    }
+
     public override void RestHealth(int restHealthValue)
     {
         health -= restHealthValue;
 
         if (health <= 0)
         {
-            OnHealthZero();
+            if (!touched)
+            {
+                touched = true;
+                OnHealthZero();
+            }
         }
     }
 }

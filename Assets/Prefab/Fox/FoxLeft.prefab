@@ -1163,13 +1163,14 @@ GameObject:
   - component: {fileID: 6405501604254204132}
   - component: {fileID: 6248445096343833231}
   - component: {fileID: 1603663183569347405}
+  - component: {fileID: 7858140812897197101}
   m_Layer: 8
   m_Name: FoxLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7556340702682831107
 Transform:
   m_ObjectHideFlags: 0
@@ -1260,7 +1261,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  direction: -1
+  yDirection: -1
+  xDirection: -1
+  zSpeed: 0
+--- !u!114 &7858140812897197101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7176014839235216313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b6919afc6aa34b81894cb9afedd83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7403381724059587965
 GameObject:
   m_ObjectHideFlags: 0

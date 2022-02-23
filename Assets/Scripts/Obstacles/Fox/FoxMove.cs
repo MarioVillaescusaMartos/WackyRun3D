@@ -7,7 +7,9 @@ public class FoxMove : MonoBehaviour
     [SerializeField]
     private float speed;
     [SerializeField]
-    private int direction;
+    private int yDirection;
+    [SerializeField]
+    private int xDirection;
     [SerializeField]
     private float zSpeed;
 
@@ -20,7 +22,9 @@ public class FoxMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = transform.position + speed * Time.deltaTime * Vector3.right * direction;
-        transform.position = transform.position.x * speed * Time.deltaTime * Vector3.right * direction;
+        zSpeed = SpeedManager.speed;
+     
+        transform.position = new Vector3(transform.position.x + zSpeed * Time.deltaTime * xDirection, 
+            0, transform.position.z + speed *Time.deltaTime * yDirection);
     }
 }

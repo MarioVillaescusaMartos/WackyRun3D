@@ -1212,6 +1212,7 @@ GameObject:
   - component: {fileID: 9071806552369509566}
   - component: {fileID: 9071806552369509564}
   - component: {fileID: 1214086770844544039}
+  - component: {fileID: -4835222840454937618}
   m_Layer: 6
   m_Name: TurboTerrific
   m_TagString: Untagged
@@ -1521,6 +1522,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a0afd325b1c248418e5fb8c3c6576be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4835222840454937618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071806552369509563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8788bceb51941d47bf293c3a5b913da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9071806552411932425
@@ -2846,6 +2859,7 @@ GameObject:
   - component: {fileID: 9071806552931348436}
   - component: {fileID: 9071806552931348435}
   - component: {fileID: 9071806552931348434}
+  - component: {fileID: 8703049350755057159}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2860,13 +2874,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9071806552931348433}
-  m_LocalRotation: {x: 0.18420392, y: -0, z: -0, w: 0.98288804}
+  m_LocalRotation: {x: 0.18395132, y: 0, z: 0, w: 0.9829354}
   m_LocalPosition: {x: 0, y: 0.20899945, z: -0.36500007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9071806552275658562}
   m_RootOrder: 45
-  m_LocalEulerAnglesHint: {x: 21.229, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.2, y: 0, z: 0}
 --- !u!20 &9071806552931348435
 Camera:
   m_ObjectHideFlags: 0
@@ -2918,6 +2932,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9071806552931348433}
   m_Enabled: 1
+--- !u!45 &8703049350755057159
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071806552931348433}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &9071806553102834783
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TryAgainMenu : MonoBehaviour
 {
@@ -15,16 +16,15 @@ public class TryAgainMenu : MonoBehaviour
 
     }
 
-    public void Update()
-    {
-        
-    }
-
     public void TryAgain()
     {
-        System.GC.Collect();
+        //System.GC.Collect();
 
-        gameOversUI.SetActive(false);
+        //gameOversUI.SetActive(false);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        FollowerManager.followers = 0;  
 
         Time.timeScale = 1f;
     }

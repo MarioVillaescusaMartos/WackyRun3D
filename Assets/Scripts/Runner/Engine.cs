@@ -23,6 +23,11 @@ public class Engine : MonoBehaviour
     private float posCounterFront = 0;
     private float posCounterBack = 0;
 
+    public event Action<float, float, float, float> OnAccelerate = delegate { };
+    public event Action<float, float, float, float> OnBreak = delegate { };
+    public event Action OnStopAccelerate = delegate { };
+    public event Action OnStopBreak = delegate { };
+
     private InputSystemKeyboard _inputSystem;
     private Rigidbody _rb;
 
@@ -54,6 +59,9 @@ public class Engine : MonoBehaviour
 
             posCounterFront += Time.deltaTime;
             posCounterBack -= Time.deltaTime;
+
+
+            OnAccelerate(maxFront, maxBack, posCounterFront, posCounterBack);
         }
         else if (posCounterBack <= maxBack && _inputSystem.ver < 0)
         {
@@ -61,6 +69,13 @@ public class Engine : MonoBehaviour
 
             posCounterFront -= Time.deltaTime;
             posCounterBack += Time.deltaTime;
+
+            OnBreak(maxFront, maxBack, posCounterFront, posCounterBack);
+        }
+        else
+        {
+            OnStopAccelerate();
+            OnStopBreak();
         }
     }
 

@@ -70,11 +70,13 @@
     <Compile Include="Assets\Scripts\HealthSystem\HeartCanvas.cs" />
     <Compile Include="Assets\Scripts\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\SpeedManager.cs" />
     <Compile Include="Assets\Scripts\Sounds\FXController.cs" />
     <Compile Include="Assets\Scripts\Menu\PresentationMenu.cs" />
     <Compile Include="Assets\Scripts\GrassGenerator.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyLoad.cs" />
     <Compile Include="Assets\Scripts\Sounds\EnemySounds.cs" />
     <Compile Include="Assets\Scripts\FSM\Decision.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerSystem.cs" />
@@ -113,7 +115,8 @@
     <Compile Include="Assets\Scripts\OutOfBoundsDetection.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
     <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
-    <Compile Include="Assets\SpeedManager.cs" />
+    <Compile Include="Assets\Scripts\Runner\DisplayEngineSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadCredits.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

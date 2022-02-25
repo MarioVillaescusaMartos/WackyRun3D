@@ -18,8 +18,6 @@ public class RunnerHealthSystem : HealthSystem
     {
         _inputSystem = GetComponent<InputSystemKeyboard>();
         INVENCIBLE = false;
-
-        SendHealth();
     }
 
     private void OnEnable()
@@ -43,13 +41,11 @@ public class RunnerHealthSystem : HealthSystem
         {
             health -= restHealthValue;
             OnHealthDecrease();
-            SendHealth();
         }
 
         if (health <= 0)
         {
             OnHealthZero();
-            SendHealth();
         }
     }
 
@@ -68,10 +64,5 @@ public class RunnerHealthSystem : HealthSystem
     public int ReturnHealth()
     {
         return health;
-    }
-
-    public void SendHealth()
-    {
-        HeartManager.heart = health;
     }
 }

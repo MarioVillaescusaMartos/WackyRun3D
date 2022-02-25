@@ -38,7 +38,7 @@ public class DieSystem : MonoBehaviour
 
         if (transform.localScale.x <= 1)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

@@ -29,7 +29,7 @@ public class ObstaclesGenerator : MonoBehaviour
         {
             waitTime = initial;
 
-            obstacleSelection = Random.Range(0, 7);
+            obstacleSelection = Random.Range(0, 9);
 
             if (obstacleSelection == 0)//Hammer smash right
             {
@@ -76,6 +76,18 @@ public class ObstaclesGenerator : MonoBehaviour
                 GameObject grassLeft = PoolingManager.Instance.GetPooledObject("TunnelList");
                 grassLeft.transform.position = positions[1].position;
                 grassLeft.SetActive(true);
+            }
+            else if (obstacleSelection == 7 || obstacleSelection == 8)
+            {
+                for (int x = 0; x < 2; x++)
+                {
+                    for (int z = 0; z < 2; z++)
+                    {
+                        GameObject follower = PoolingManager.Instance.GetPooledObject("FollowersList");
+                        follower.transform.position = new Vector3(positions[1].position.x + x * 3, 0, positions[1].position.z + z * 3);
+                        follower.SetActive(true);
+                    }
+                }
             }
         }
         else

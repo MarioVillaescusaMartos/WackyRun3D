@@ -34,12 +34,6 @@ public class PauseMenu : MonoBehaviour
         _inputSystem.OnPause -= PauseOn;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        PauseManager.pauseMode = gameIsPaused;
-    }
-
     void PauseOn()
     {
         if (gameIsPaused)
@@ -57,6 +51,7 @@ public class PauseMenu : MonoBehaviour
         gamePauseUI.SetActive(false);
         gameIsPaused = false;
         Time.timeScale = 1f;
+        PauseManager.pauseMode = gameIsPaused;
         //GameManager.activeTimeScale = gameIsPaused;
     }
 
@@ -65,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         gamePauseUI.SetActive(true);
         gameIsPaused = true;
         Time.timeScale = 0f;
+        PauseManager.pauseMode = gameIsPaused;
         //GameManager.activeTimeScale = gameIsPaused;
     }
 }

@@ -16,6 +16,7 @@ public class InputSystemKeyboard : MonoBehaviour
     public event Action OnEnter = delegate { };
 
     private bool pause;
+    private bool space;
     bool keyPressed;
 
     // Update is called once per frame
@@ -31,52 +32,53 @@ public class InputSystemKeyboard : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 OnPause(); //Cuando se pulsa la tecla "Esc" el juego se pausa
-            }
-
-            //Good mode keys          
-            //Invencible
-            if (Input.GetKeyDown(KeyCode.Alpha0))
-            {
-                OnInvencible();
-            }
-
-            //Load level 1
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                SceneManager.LoadScene("Level1Scene");
-            }
-
-            //Load level 2
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                SceneManager.LoadScene("Level2Scene");
-            }
-
-            //Load level 3
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                SceneManager.LoadScene("Level3Scene");
-            }
-
-            //Create Follower
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                OnCreateFollower();
-            }
-
-            //Delete followers
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                OnDeleteFollower();
-
-            }
+            }            
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !space)
         {
             OnEnter();
+            space = true;
         }
-}
+
+        //Good mode keys          
+        //Invencible
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            OnInvencible();
+        }
+
+        //Load level 1
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Level1Scene");
+        }
+
+        //Load level 2
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("Level2Scene");
+        }
+
+        //Load level 3
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("Level3Scene");
+        }
+
+        //Create Follower
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            OnCreateFollower();
+        }
+
+        //Delete followers
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            OnDeleteFollower();
+
+        }
+    }
 
     public bool ReturnKey()
     {

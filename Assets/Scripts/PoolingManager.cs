@@ -110,4 +110,17 @@ public class PoolingManager: MonoBehaviour
         }
         return null;
     }
+
+    public GameObject GetActiveObject (string name)
+    {
+        List<GameObject> tmp = _items[name];
+        for (int i = 0; i < tmp.Count; i++)
+        {
+            if (tmp[i].activeInHierarchy)
+            {
+                return tmp[i];
+            }
+        }
+        return null;
+    }
 }

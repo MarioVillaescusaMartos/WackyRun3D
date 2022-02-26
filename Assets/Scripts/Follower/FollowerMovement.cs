@@ -12,7 +12,7 @@ public class FollowerMovement : MonoBehaviour
 
     private Transform target;
     private bool startMove;
-    private bool touched;
+    public  bool touched;
 
     Rigidbody _rb;
 
@@ -54,5 +54,10 @@ public class FollowerMovement : MonoBehaviour
         target = targ;
 
         startMove = true;        
+    }
+
+    public bool ReturnTouched()
+    {
+        return touched;
     }
 }

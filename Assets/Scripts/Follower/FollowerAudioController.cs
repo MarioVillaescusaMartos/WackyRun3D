@@ -6,7 +6,6 @@ public class FollowerAudioController : MonoBehaviour
 {
     private AudioSource _auso;
     private FollowerHealthSystem _follhealth;
-    private bool active;
 
     private void Awake()
     {
@@ -27,25 +26,10 @@ public class FollowerAudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        active = false;
     }
 
-    private void Update()
-    {
-        if (PauseManager.pauseMode)
-        {
-            _auso.Pause();
-        }
-        else if (!PauseManager.pauseMode && active)
-        {
-            _auso.Play();
-        }
-    }
-
-    private void PlaySound()
+    public void PlaySound()
     {
         _auso.Play();
-
-        active = true;
     }
 }

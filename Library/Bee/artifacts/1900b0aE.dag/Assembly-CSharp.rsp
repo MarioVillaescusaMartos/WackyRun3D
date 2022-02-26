@@ -358,6 +358,7 @@
 "Assets/Scripts/Menu/LoadCredits.cs"
 "Assets/Scripts/Menu/LoadGame.cs"
 "Assets/Scripts/Menu/LoadingRotate.cs"
+"Assets/Scripts/Menu/LoadInstructions.cs"
 "Assets/Scripts/Menu/LoadMenu.cs"
 "Assets/Scripts/Menu/MainMenu.cs"
 "Assets/Scripts/Menu/PauseManager.cs"

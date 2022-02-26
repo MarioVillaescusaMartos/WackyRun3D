@@ -6232,7 +6232,6 @@ GameObject:
   - component: {fileID: 9071806552369509567}
   - component: {fileID: 609667764065993251}
   - component: {fileID: 9071806552369509566}
-  - component: {fileID: -7766786605168983901}
   - component: {fileID: 9071806552369509564}
   - component: {fileID: 1214086770844544039}
   - component: {fileID: -4835222840454937618}
@@ -6526,18 +6525,6 @@ MonoBehaviour:
   health: 1
   maxHealth: 1
   INVENCIBLE: 0
---- !u!114 &-7766786605168983901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9071806552369509563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b665c6fcf0442484caeac3b129b2b821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9071806552369509564
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class LoadCredits : MonoBehaviour
 {
@@ -10,9 +12,10 @@ public class LoadCredits : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EnterCredits()
     {
-        
+        SceneManager.LoadScene("CreditsScene");
+
+        Time.timeScale = 1f;
     }
 }

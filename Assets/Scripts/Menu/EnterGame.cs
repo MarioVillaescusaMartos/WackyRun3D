@@ -29,6 +29,8 @@ public class EnterGame : MonoBehaviour
     {
         Time.timeScale = 0f;
 
+        FollowerManager.followers = 0;
+
         PauseManager.pauseMode = true;
     }
 

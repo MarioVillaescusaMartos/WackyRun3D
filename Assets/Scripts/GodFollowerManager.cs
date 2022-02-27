@@ -47,6 +47,8 @@ public class GodFollowerManager : MonoBehaviour
         if (follower.GetComponent<FollowerMovement>().ReturnTouched())
         {
             follower.SetActive(false);
+
+            FollowerManager.followers = FollowerManager.followers - 1;
         }
         else
         {

@@ -73,7 +73,7 @@ public class InputSystemKeyboard : MonoBehaviour
         }
 
         //Delete followers
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha5) && FollowerManager.followers != 0)
         {
             OnDeleteFollower();
 

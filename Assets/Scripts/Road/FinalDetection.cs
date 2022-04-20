@@ -9,6 +9,8 @@ public class FinalDetection : MonoBehaviour
     [SerializeField]
     private GameObject gameOverDisplayUI;
     [SerializeField]
+    private GameObject coinsDisplayUI;
+    [SerializeField]
     private int minFollower;
 
     // Start is called before the first frame update
@@ -19,6 +21,7 @@ public class FinalDetection : MonoBehaviour
 
     public void GetRunner(bool run)
     {
+        coinsDisplayUI.SetActive(true);
         if (run)
         {
             if (FollowerManager.followers < minFollower)

@@ -6,8 +6,9 @@ using System;
 public class Engine : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
-
+    public float speed;
+    [SerializeField]
+    public float initialSpeed;
     [SerializeField]
     private float maxFront;
     [SerializeField]
@@ -36,6 +37,11 @@ public class Engine : MonoBehaviour
     {
         _inputSystem = GetComponent<InputSystemKeyboard>();
         _rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        initialSpeed = speed;
     }
 
     // Update is called once per frame

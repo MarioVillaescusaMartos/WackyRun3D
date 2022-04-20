@@ -14,6 +14,7 @@ public class InputSystemKeyboard : MonoBehaviour
     public event Action OnDeleteFollower = delegate { };
     public event Action OnPause = delegate { };
     public event Action OnEnter = delegate { };
+    public event Action OnTp = delegate { };
 
     private bool pause;
     private bool space;
@@ -32,7 +33,12 @@ public class InputSystemKeyboard : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 OnPause(); //Cuando se pulsa la tecla "Esc" el juego se pausa
-            }            
+            }
+            
+            if (Input.GetKeyDown(KeyCode.F5))
+            {
+                OnTp();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && !space)

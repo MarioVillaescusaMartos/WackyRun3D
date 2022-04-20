@@ -7,17 +7,21 @@ public class SpeedManager : MonoBehaviour
     public static float speed;
 
     [SerializeField]
-    private float setSpeed;
+    public float setSpeed;
+
+    public  float initialSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpeedManagerSystem.speed = setSpeed;
+        SpeedManagerSystem.initialSpeed = setSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        speed = setSpeed;
+        speed = SpeedManagerSystem.speed;
     }
 
     public float ReturnSpeed()

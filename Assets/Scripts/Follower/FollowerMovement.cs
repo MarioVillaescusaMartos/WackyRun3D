@@ -12,7 +12,7 @@ public class FollowerMovement : MonoBehaviour
 
     private Transform target;
     private bool startMove;
-    public  bool touched;
+    public bool touched;
 
     Rigidbody _rb;
 
@@ -30,6 +30,7 @@ public class FollowerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         if (startMove)
         {
             Destroy(gameObject.GetComponent<RoadMove>());

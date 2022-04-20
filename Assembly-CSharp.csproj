@@ -62,10 +62,12 @@
     <Compile Include="Assets\Scripts\Menu\LoadMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Obstacles\ObstaclesGenerator.cs" />
+    <Compile Include="Assets\Scripts\Menu\EnterGame.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseManager.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Decision\TimeDecision.cs" />
     <Compile Include="Assets\Scripts\FSM\State.cs" />
     <Compile Include="Assets\Scripts\FSM\Controller.cs" />
+    <Compile Include="Assets\Scripts\Follower\Particles\BurnoutParticleSystemController.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Action\IdleHammer.cs" />
     <Compile Include="Assets\Scripts\PoolingManager.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\RunnerHealthSystem.cs" />
@@ -78,11 +80,14 @@
     <Compile Include="Assets\Scripts\Menu\ShowControl.cs" />
     <Compile Include="Assets\Scripts\DontDestroyLoad.cs" />
     <Compile Include="Assets\Scripts\Sounds\EnemySounds.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadInstructions.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerAudioController.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadCredits.cs" />
     <Compile Include="Assets\Scripts\FSM\Decision.cs" />
     <Compile Include="Assets\Scripts\Generator\GeneratorMove.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerSystem.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Generator\RoadDecoration.cs" />
     <Compile Include="Assets\Scripts\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\FSM-Hammer\Decision\DecisionTimer.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerCanvas.cs" />
@@ -104,26 +109,40 @@
     <Compile Include="Assets\Scripts\Follower\FollowerRotation.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DontDestroyDamageSystem.cs" />
-    <Compile Include="Assets\Scripts\OutOfBoundDestruction.cs" />
+    <Compile Include="Assets\Scripts\OutOfBounds\OutOfBoundDestruction.cs" />
     <Compile Include="Assets\Scripts\Runner\SendTarget.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Fox\FoxMove.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerParticleSystemController.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerMovement.cs" />
+    <Compile Include="Assets\Scripts\GodFollowerManager.cs" />
     <Compile Include="Assets\Scripts\Sounds\MusicController.cs" />
+    <Compile Include="Assets\Scripts\Follower\Particles\DirtParticleSystemController.cs" />
+    <Compile Include="Assets\Scripts\Follower\FollowerParticleSystemManager.cs" />
     <Compile Include="Assets\Scripts\DamageSystem\DestroyDamageSystem.cs" />
     <Compile Include="Assets\Scripts\Follower\FollowerManager.cs" />
     <Compile Include="Assets\Scripts\Menu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Menu\SliderController.cs" />
     <Compile Include="Assets\Scripts\Menu\LoadingRotate.cs" />
-    <Compile Include="Assets\Scripts\OutOfBoundsDetection.cs" />
+    <Compile Include="Assets\Scripts\OutOfBounds\OutOfBoundsDetection.cs" />
     <Compile Include="Assets\Scripts\FSM\Action.cs" />
-    <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
     <Compile Include="Assets\Scripts\Runner\RunnerAudioController.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerAudioController.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerParticleSystemController.cs" />
-    <Compile Include="Assets\Scripts\Follower\FollowerParticleSystemManager.cs" />
-    <Compile Include="Assets\Scripts\Follower\Particles\DirtParticleSystemController.cs" />
-    <Compile Include="Assets\Scripts\Follower\Particles\BurnoutParticleSystemController.cs" />
+    <Compile Include="Assets\Scripts\Menu\SetOffMenuObjects.cs" />
+    <Compile Include="Assets\Scripts\Exam\YellowCube\YellowCubeSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\YellowCube\YellowCubeDetection.cs" />
+    <Compile Include="Assets\Scripts\Exam\RedCube\RedCubeSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\RedCube\RedCubeDetection.cs" />
+    <Compile Include="Assets\Scripts\SpeedManagerSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\RedFollower\RedFollowerSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\RedFollower\RedFollowerDetection.cs" />
+    <Compile Include="Assets\Scripts\Exam\Tp\RunnerTpSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\Tp\FollowerTpSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\Tp\TpSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\Coins\CoinsCanvas.cs" />
+    <Compile Include="Assets\Scripts\Exam\Coins\CoinsManager.cs" />
+    <Compile Include="Assets\Scripts\Exam\Coins\CoinsSystem.cs" />
+    <Compile Include="Assets\Scripts\Exam\Coins\CloseCoinCanvas.cs" />
+    <Compile Include="Assets\Scripts\Exam\Coins\CoinDetection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -763,6 +782,9 @@
     <Reference Include="VSSettingsProvider">
       <HintPath>Library\ScriptAssemblies\VSSettingsProvider.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -783,9 +805,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
